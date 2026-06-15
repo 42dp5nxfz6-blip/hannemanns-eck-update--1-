@@ -249,6 +249,7 @@
         'Ihre Reservierungsanfrage für <strong>' + escapeHtml(String(data.get('guests'))) + ' Personen</strong> am <strong>' +
         fmt + '</strong> um <strong>' + escapeHtml(String(data.get('time'))) + ' Uhr</strong> ist eingegangen. ' +
         'Wir bestätigen Ihren Tisch in Kürze telefonisch oder per E-Mail.';
+      data.append('_replyto', data.get('email') || '');
       data.append('_subject', 'Neue Reservierungsanfrage – Hannemanns Eck');
       submitForm(form, data, box, successHtml, dateInput);
     });
