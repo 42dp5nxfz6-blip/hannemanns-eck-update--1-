@@ -18,7 +18,7 @@
      Solange hier 'YOUR_FORM_ID' steht, läuft die Seite im Demo-Modus:
      Die Bestätigung wird angezeigt, aber es wird nichts versendet.
      ================================================================= */
-  var FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+  var FORMSPREE_ENDPOINT = 'https://formspree.io/f/xdavydow';
 
   function isFormspreeConfigured() {
     return /^https:\/\/formspree\.io\/f\/[A-Za-z0-9]+$/.test(FORMSPREE_ENDPOINT) &&
